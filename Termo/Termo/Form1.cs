@@ -10,7 +10,7 @@ namespace Termo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string palavra = "ADOLF";
+            string palavra = "TERMO";
             string tentativa;
             RichTextBox textAtual;
             c++;
@@ -31,7 +31,7 @@ namespace Termo
                     if (tentativa == palavra)
                     {
                         textAtual.ForeColor = Color.Green;
-                        label1.Text = "Você acertou a palavra!!";
+                        label1.Text = "VocÃª acertou a palavra!!";
                         c = 5;
                     }
                     else
