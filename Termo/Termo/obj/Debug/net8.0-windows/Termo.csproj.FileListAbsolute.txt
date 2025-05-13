@@ -1,0 +1,16 @@
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.Form1.resources
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.csproj.GenerateResource.cache
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.AssemblyInfoInputs.cache
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.AssemblyInfo.cs
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.csproj.CoreCompileInputs.cache
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\bin\Debug\net8.0-windows\Termo.exe
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\bin\Debug\net8.0-windows\Termo.deps.json
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\bin\Debug\net8.0-windows\Termo.runtimeconfig.json
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\bin\Debug\net8.0-windows\Termo.dll
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\bin\Debug\net8.0-windows\Termo.pdb
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.dll
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\refint\Termo.dll
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.pdb
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.genruntimeconfig.cache
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\ref\Termo.dll
