@@ -14,3 +14,4 @@ C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8
 C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.pdb
 C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.genruntimeconfig.cache
 C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\ref\Termo.dll
+C:\Trabalhos\Theo\Programação\Projetos GitHub\Termo\Termo\Termo\obj\Debug\net8.0-windows\Termo.sourcelink.json

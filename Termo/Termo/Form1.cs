@@ -1,3 +1,6 @@
+using System.Net.Http.Headers;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 namespace Termo
 {
     public partial class Form1 : Form
@@ -10,15 +13,18 @@ namespace Termo
 
         private void button1_Click(object sender, EventArgs e)
         {
+            c++;
+            // A palavra que vai ser adivinhada
             string palavra = "TERMO";
             string tentativa;
-            RichTextBox textAtual;
-            c++;
-            if (c < 5)
+            RichTextBox[] allText = new RichTextBox[5];
+            for (int i = 0; i < 5; i++)
             {
-                textAtual = (this.Controls.Find($"richTextBox{c}", true).FirstOrDefault() as RichTextBox);
-                tentativa = (this.Controls.Find($"richTextBox{c}", true).FirstOrDefault() as RichTextBox).Text;
-                tentativa = tentativa.ToUpper();
+                allText[i] = (this.Controls.Find($"richTextBox{i+1}", true).FirstOrDefault() as RichTextBox);
+            }
+            if (c <= 5)
+            {
+                tentativa = allText[c-1].Text.ToUpper();
                 if (tentativa.Length != 5)
                 {
                     label1.Text = "ERRO!! A palavra tem que ter 5 caracteres.";
@@ -26,13 +32,13 @@ namespace Termo
                 }
                 else
                 {
-                    textAtual.ReadOnly = true;
+                    allText[c-1].ReadOnly = true;
                     label1.Text = "";
                     if (tentativa == palavra)
                     {
-                        textAtual.ForeColor = Color.Green;
+                        allText[c].ForeColor = Color.Green;
                         label1.Text = "Você acertou a palavra!!";
-                        c = 5;
+                        c = 6;
                     }
                     else
                     {
@@ -40,8 +46,8 @@ namespace Termo
                         {
                             if (tentativa[i] == palavra[i])
                             {
-                                textAtual.Select(i, 1);
-                                textAtual.SelectionColor = Color.Green;
+                                allText[c - 1].Select(i, 1);
+                                allText[c - 1].SelectionColor = Color.Green;
                             }
                             else
                             {
@@ -49,14 +55,14 @@ namespace Termo
                                 {
                                     if (tentativa[i] == palavra[x])
                                     {
-                                        textAtual.Select(i, 1);
-                                        textAtual.SelectionColor = Color.Orange;
+                                        allText[c - 1].Select(i, 1);
+                                        allText[c - 1].SelectionColor = Color.Orange;
                                         break;
                                     }
                                     else
                                     {
-                                        textAtual.Select(i, 1);
-                                        textAtual.SelectionColor = Color.Red;
+                                        allText[c - 1].Select(i, 1);
+                                        allText[c - 1].SelectionColor = Color.Red;
                                     }
                                 }
                             }
@@ -75,6 +81,18 @@ namespace Termo
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button2.Visible = false;
+            foreach (Control c in this.Controls)
+            {
+                if (c.Tag.ToString() == "Jogo")
+                {
+                    c.Visible = true;
+                }
+            }
         }
     }
 }

@@ -35,6 +35,7 @@
             richTextBox5 = new RichTextBox();
             button1 = new Button();
             label1 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // richTextBox1
@@ -45,7 +46,9 @@
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(128, 53);
             richTextBox1.TabIndex = 0;
+            richTextBox1.Tag = "Jogo";
             richTextBox1.Text = "";
+            richTextBox1.Visible = false;
             richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // richTextBox2
@@ -56,7 +59,9 @@
             richTextBox2.Name = "richTextBox2";
             richTextBox2.Size = new Size(128, 53);
             richTextBox2.TabIndex = 1;
+            richTextBox2.Tag = "Jogo";
             richTextBox2.Text = "";
+            richTextBox2.Visible = false;
             // 
             // richTextBox3
             // 
@@ -66,7 +71,9 @@
             richTextBox3.Name = "richTextBox3";
             richTextBox3.Size = new Size(128, 53);
             richTextBox3.TabIndex = 2;
+            richTextBox3.Tag = "Jogo";
             richTextBox3.Text = "";
+            richTextBox3.Visible = false;
             // 
             // richTextBox4
             // 
@@ -76,7 +83,9 @@
             richTextBox4.Name = "richTextBox4";
             richTextBox4.Size = new Size(128, 53);
             richTextBox4.TabIndex = 3;
+            richTextBox4.Tag = "Jogo";
             richTextBox4.Text = "";
+            richTextBox4.Visible = false;
             // 
             // richTextBox5
             // 
@@ -86,7 +95,9 @@
             richTextBox5.Name = "richTextBox5";
             richTextBox5.Size = new Size(128, 53);
             richTextBox5.TabIndex = 4;
+            richTextBox5.Tag = "Jogo";
             richTextBox5.Text = "";
+            richTextBox5.Visible = false;
             // 
             // button1
             // 
@@ -95,8 +106,10 @@
             button1.Name = "button1";
             button1.Size = new Size(128, 59);
             button1.TabIndex = 5;
+            button1.Tag = "Jogo";
             button1.Text = "Testar";
             button1.UseVisualStyleBackColor = true;
+            button1.Visible = false;
             button1.Click += button1_Click;
             // 
             // label1
@@ -107,13 +120,28 @@
             label1.Name = "label1";
             label1.Size = new Size(155, 45);
             label1.TabIndex = 6;
+            label1.Tag = "Jogo";
             label1.Text = "               ";
+            label1.Visible = false;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 30F);
+            button2.Location = new Point(100, 130);
+            button2.Name = "button2";
+            button2.Size = new Size(151, 63);
+            button2.TabIndex = 7;
+            button2.Tag = "Inicio";
+            button2.Text = "Jogar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(richTextBox5);
@@ -137,5 +165,6 @@
         private RichTextBox richTextBox5;
         private Button button1;
         private Label label1;
+        private Button button2;
     }
 }
