@@ -36,6 +36,7 @@
             button1 = new Button();
             label1 = new Label();
             button2 = new Button();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
             // richTextBox1
@@ -127,7 +128,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 30F);
-            button2.Location = new Point(100, 130);
+            button2.Location = new Point(324, 120);
             button2.Name = "button2";
             button2.Size = new Size(151, 63);
             button2.TabIndex = 7;
@@ -166,5 +167,6 @@
         private Button button1;
         private Label label1;
         private Button button2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

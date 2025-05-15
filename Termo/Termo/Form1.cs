@@ -15,7 +15,7 @@ namespace Termo
         {
             c++;
             // A palavra que vai ser adivinhada
-            string palavra = "TERMO";
+            string palavra = "POSTE";
             string tentativa;
             RichTextBox[] allText = new RichTextBox[5];
             for (int i = 0; i < 5; i++)
@@ -28,6 +28,7 @@ namespace Termo
                 if (tentativa.Length != 5)
                 {
                     label1.Text = "ERRO!! A palavra tem que ter 5 caracteres.";
+                    label1.ForeColor = Color.Red;
                     c--;
                 }
                 else
@@ -36,9 +37,13 @@ namespace Termo
                     label1.Text = "";
                     if (tentativa == palavra)
                     {
-                        allText[c].ForeColor = Color.Green;
+                        allText[c-1].ForeColor = Color.Green;
                         label1.Text = "Você acertou a palavra!!";
-                        c = 6;
+                        label1.ForeColor = Color.Green;
+                        button1.Enabled = false;
+                        button1.BackColor = Color.DarkGreen;
+                        button1.Text = palavra;
+                        c = 10;
                     }
                     else
                     {
@@ -71,6 +76,13 @@ namespace Termo
                 }
 
             }
+            if (c == 5)
+            {
+                label1.Text = "Você não acertou a palavra!! A palavra correta era";
+                button1.Enabled = false;
+                button1.Text = palavra;
+                button1.BackColor = Color.IndianRed;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -85,12 +97,15 @@ namespace Termo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            button2.Visible = false;
             foreach (Control c in this.Controls)
             {
                 if (c.Tag.ToString() == "Jogo")
                 {
                     c.Visible = true;
+                }
+                if (c.Tag.ToString() == "Inicio")
+                {
+                    c.Visible = false;
                 }
             }
         }
